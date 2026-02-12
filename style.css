@@ -10,11 +10,11 @@ body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial,
 .skip:focus { position:static; background:#fff; border:1px solid #000; padding:8px; }
 .site-header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:10px 20px; border-bottom:1px solid #eee; position:sticky; top:0; background:#fff; z-index:10; }
 .brand-link { display:inline-flex; align-items:center; text-decoration:none; }
-.logo { height:72px; width:auto; display:block; }
+.logo { height:64px; width:auto; display:block; }
 nav a { margin:0 10px; text-decoration:none; color:var(--text); font-weight:600; }
 nav a:hover { color:var(--akcent); }
 .hero { padding:60px 20px 52px; text-align:center; }
-.hero-logo { display:block; margin:0 auto 14px; height:112px; width:auto; }
+.hero-logo { display:block; margin:0 auto 14px; height:96px; width:auto; }
 .hero h1 { font-size: clamp(30px, 5vw, 52px); margin:0 0 12px; }
 .button { display:inline-block; padding:12px 18px; background:var(--akcent); color:#fff; border-radius:8px; text-decoration:none; border:none; cursor:pointer; }
 .button:hover { opacity:.92; }
