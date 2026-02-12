@@ -8,18 +8,26 @@ html:focus-within { scroll-behavior: smooth; }
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--text); background:var(--pozadi); line-height:1.6; }
 .skip { position:absolute; left:-9999px; }
 .skip:focus { position:static; background:#fff; border:1px solid #000; padding:8px; }
-.site-header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:10px 20px; border-bottom:1px solid #eee; position:sticky; top:0; background:#fff; z-index:10; }
+.site-header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 20px; border-bottom:1px solid #eee; position:sticky; top:0; background:#fff; z-index:10; }
 .brand-link { display:inline-flex; align-items:center; text-decoration:none; }
-.logo { height:64px; width:auto; display:block; }
+.logo { height:256px; width:auto; display:block; }
 nav a { margin:0 10px; text-decoration:none; color:var(--text); font-weight:600; }
 nav a:hover { color:var(--akcent); }
-.hero { padding:60px 20px 52px; text-align:center; }
-.hero-logo { display:block; margin:0 auto 14px; height:96px; width:auto; }
-.hero h1 { font-size: clamp(30px, 5vw, 52px); margin:0 0 12px; }
+.hero { padding:72px 20px 60px; text-align:center; }
+.hero-logo { display:block; margin:0 auto 18px; height:384px; width:auto; }
+.hero h1 { font-size: clamp(34px, 6vw, 60px); margin:0 0 16px; }
 .button { display:inline-block; padding:12px 18px; background:var(--akcent); color:#fff; border-radius:8px; text-decoration:none; border:none; cursor:pointer; }
 .button:hover { opacity:.92; }
 .button.ghost { background:transparent; color:var(--akcent); border:1px solid var(--akcent); }
 .wrap { max-width:980px; margin:0 auto; padding:40px 20px; }
 .grid { display:grid; gap:20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.profile { text-align:center; margin-top:20px; }
+.profile-photo { max-width:420px; width:100%; height:auto; border-radius:12px; box-shadow: 0 6px 18px rgba(0,0,0,.08); display:inline-block; }
 .site-footer { text-align:center; padding:20px; border-top:1px solid #eee; margin-top:40px; }
 .contact-actions .button { margin-right: 8px; }
+
+/* Responsivní omezení velikosti log na menších displejích */
+@media (max-width: 640px) {
+  .logo { height: 140px; }
+  .hero-logo { height: 220px; }
+}
