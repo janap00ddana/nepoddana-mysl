@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nepoddaná mysl – Svobodně myslet, tvořivě učit.</title>
-  <meta name="description" content="Přednášky a workshopy pro učitele a rodiče: tvořivost, vývoj tvořivosti, mediální vzdělávání.">
+  <title>Nepoddaná mysl – Svobodně myslet, tvořivě učit</title>
+  <meta name="description" content="Přednášky a workshopy pro učitele i rodiče: tvořivost, vývoj tvořivosti, mediální vzdělávání.">
   <link rel="icon" type="image/png" href="img/favicon-32.png" sizes="32x32"> 
   <link rel="icon" type="image/png" href="img/favicon.png" sizes="256x256"> 
   <link rel="stylesheet" href="style.css">
@@ -12,7 +12,9 @@
 <body>
   <a class="skip" href="#main">Přeskočit na obsah</a>
   <header class="site-header">
-    <div class="brand"><img src="img/logo.png" alt="Logo Nepoddaná mysl" class="logo"></div>
+    <a href="#domu" class="brand-link" aria-label="Domů">
+      <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Logo Nepoddaná mysl" class="logo" height="48">
+    </a>
     <nav aria-label="Hlavní">
       <a href="#domu">Domů</a>
       <a href="#omne">O mně</a>
@@ -20,17 +22,21 @@
       <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
+
   <main id="main">
     <section id="domu" class="hero">
+      <img class="hero-logo" src="img/logo_hero.png" srcset="img/logo_hero.png 1x, img/logo_hero@2x.png 2x" alt="Logo Nepoddaná mysl" height="72">
       <h1>Svobodně myslet, tvořivě učit.</h1>
       <p>Pomáhám školám a rodinám rozvíjet tvořivost a mediální gramotnost.</p>
-      <p><a class="button" href="mailto:nepoddanamysl@google.com">Napsat mi</a></p>
+      <p><a class="button" href="mailto:nepoddanamysl@gmail.com">Napsat mi</a></p>
     </section>
+
     <section id="omne" class="wrap">
       <h2>O mně</h2>
       <p>Jsem Jana Poddaná a vedu přednášky a workshopy pro učitele i rodiče.
          Témata: tvořivost, vývoj tvořivosti, mediální vzdělávání.</p>
     </section>
+
     <section id="sluzby" class="wrap grid">
       <article>
         <h3>Přednášky</h3>
@@ -51,16 +57,21 @@
         <p>Pracovní listy a podklady ke stažení (brzy).</p>
       </article>
     </section>
+
     <section id="kontakt" class="wrap">
-      <h2>Kontakt<!-- Gmail compose (web) -->
-přímé otevření Gmailu
-<!-- Outlook na webu -->
-přímé otevření Outlooku</h2>
-      <p>E‑mail: <a href="mailto:nepoddanamysl@google.com">nepoddanamysl@google.com</a></p>
-      <p>LinkedIn / Instagram: @vase_jmeno</p>
+      <h2>Kontakt</h2>
+      <p>
+        E‑mail: <a href="mailto:nepoddanamysl@gmail.com">nepoddanamysl@gmail.com</a>
+        <button class="button ghost" type="button" onclick="navigator.clipboard.writeText('nepoddanamysl@gmail.com'); this.textContent='Zkopírováno!';" aria-live="polite">Zkopírovat</button>
+      </p>
+      <p class="contact-actions">
+        <a class="button" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&to=nepoddanamysl@gmail.com&su=Popt%C3%A1vka%20p%C5%99edn%C3%A1%C5%A1ky&body=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20p%C5%99edn%C3%A1%C5%A1ku%20na%20t%C3%A9ma...">Napsat přes Gmail</a>
+        <a class="button" target="_blank" rel="noopener" href="https://outlook.office.com/mail/deeplink/compose?to=nepoddanamysl@gmail.com&subject=Popt%C3%A1vka%20p%C5%99edn%C3%A1%C5%A1ky&body=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20p%C5%99edn%C3%A1%C5%A1ku%20na%20t%C3%A9ma...">Napsat přes Outlook</a>
+      </p>
       <small>Údaje používám jen k odpovědi na váš dotaz.</small>
     </section>
   </main>
+
   <footer class="site-footer"><p>© Nepoddaná mysl • Jana Poddaná</p></footer>
 </body>
 </html>
