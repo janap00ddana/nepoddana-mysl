@@ -7,13 +7,19 @@
   <meta name="description" content="Přednášky a workshopy pro učitele i rodiče: tvořivost, vývoj tvořivosti, mediální vzdělávání.">
   <link rel="icon" type="image/png" href="img/favicon-32.png" sizes="32x32"> 
   <link rel="icon" type="image/png" href="img/favicon.png" sizes="256x256"> 
+  <!-- Preload hero logo (1x/2x) -->
+  <link rel="preload" as="image" href="img/logo_hero.webp"
+        imagesrcset="img/logo_hero.webp 1x, img/logo_hero@2x.webp 2x" type="image/webp">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#main">Přeskočit na obsah</a>
   <header class="site-header">
     <a href="#domu" class="brand-link" aria-label="Domů">
-      <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Logo Nepoddaná mysl" class="logo" height="48">
+      <picture>
+        <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+        <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Logo Nepoddaná mysl" class="logo" height="48">
+      </picture>
     </a>
     <nav aria-label="Hlavní">
       <a href="#domu">Domů</a>
@@ -25,10 +31,13 @@
 
   <main id="main">
     <section id="domu" class="hero">
-      <img class="hero-logo" src="img/logo_hero.png" srcset="img/logo_hero.png 1x, img/logo_hero@2x.png 2x" alt="Logo Nepoddaná mysl" height="72">
+      <picture>
+        <source type="image/webp" srcset="img/logo_hero.webp 1x, img/logo_hero@2x.webp 2x">
+        <img class="hero-logo" src="img/logo_hero.png" srcset="img/logo_hero.png 1x, img/logo_hero@2x.png 2x" alt="Logo Nepoddaná mysl" height="72">
+      </picture>
       <h1>Svobodně myslet, tvořivě učit.</h1>
       <p>Pomáhám školám a rodinám rozvíjet tvořivost a mediální gramotnost.</p>
-     
+      <p><a class="button" href="mailto:nepoddanamysl@gmail.com">Napsat mi</a></p>
     </section>
 
     <section id="omne" class="wrap">
